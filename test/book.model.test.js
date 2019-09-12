@@ -4,7 +4,7 @@ const expect = chai.expect;
 const assert = chai.assert;
 
 var mongodb =
-  "mongodb://sssaini1:sssaini1@ds147902.mlab.com:47902/booksdb-delete-later";
+  "mongodb://sssaini1:sssaini1@ds147902.mlab.com:47902/testing";
 mongoose.connect(mongodb);
 const Book = require("../book/book.model");
 

@@ -4,7 +4,7 @@ const chai = require("chai");
 const expect = chai.expect;
 
 var mongodb =
-  "mongodb://sssaini1:sssaini1@ds147902.mlab.com:47902/booksdb-delete-later";
+  "mongodb://sssaini1:sssaini1@ds147902.mlab.com:47902/testing";
 mongoose.connect(mongodb);
 
 describe("App Test", () => {
