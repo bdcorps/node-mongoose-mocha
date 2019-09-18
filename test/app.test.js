@@ -23,29 +23,29 @@ describe("App Test", () => {
     server.close();
   });
 
-  describe("get user", () => {
-    it("has a module", async () => {
-      expect(app).not.to.be.undefined;
-    });
-  });
+  // describe("get user", () => {
+  //   it("has a module", async () => {
+  //     expect(app).not.to.be.undefined;
+  //   });
+  // });
 
-  describe("routes ", () => {
-    it("has a module", async () => {
-      await request(server)
-        .get("/")
-        .expect(200);
-    });
+  // describe("routes ", () => {
+  //   it("has a module", async () => {
+  //     await request(server)
+  //       .get("/")
+  //       .expect(200);
+  //   });
 
-    // it("can post users", async () => {
-    //   await request(server)
-    //     .post("/")
-    //     .expect(200);
-    // });
+  // it("can post users", async () => {
+  //   await request(server)
+  //     .post("/")
+  //     .expect(200);
+  // });
 
-    // it("fails post users", async () => {
-    //   await request(server)
-    //     .post("/")
-    //     .expect(200);
-    // });
-  });
+  // it("fails post users", async () => {
+  //   await request(server)
+  //     .post("/")
+  //     .expect(200);
+  // });
+  // });
 });

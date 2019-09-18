@@ -18,44 +18,44 @@ describe("Book Model", () => {
     await mongoose.connection.close();
   });
 
-  it("has a module", () => {
-    expect(Book).to.not.be.undefined;
-  });
+  // it("has a module", () => {
+  //   expect(Book).to.not.be.undefined;
+  // });
 
-  describe("get user", () => {
-    it("gets a user", async () => {
-      const book = new Book({ name: "what", numOfPages: 10 });
-      await book.save();
+  // describe("get user", () => {
+  //   it("gets a user", async () => {
+  //     const book = new Book({ name: "what", numOfPages: 10 });
+  //     await book.save();
 
-      const foundBook = await Book.findOne({ name: "what" });
-      const expected = "what";
-      const actual = foundBook.name;
-      expect(actual).equal(expected);
-    });
-  });
+  //     const foundBook = await Book.findOne({ name: "what" });
+  //     const expected = "what";
+  //     const actual = foundBook.name;
+  //     expect(actual).equal(expected);
+  //   });
+  // });
 
-  describe("save user", () => {
-    it("saves a user", async () => {
-      const book = new Book({ name: "what", numOfPages: 10 });
-      const savedBook = await book.save();
+  // describe("save user", () => {
+  //   it("saves a user", async () => {
+  //     const book = new Book({ name: "what", numOfPages: 10 });
+  //     const savedBook = await book.save();
 
-      const expected = "what";
-      const actual = savedBook.name;
-      expect(actual).equal(expected);
-    });
-  });
+  //     const expected = "what";
+  //     const actual = savedBook.name;
+  //     expect(actual).equal(expected);
+  //   });
+  // });
 
-  describe("update user", () => {
-    it("updates a user", async () => {
-      const book = new Book({ name: "what", numOfPages: 10 });
-      await book.save();
+  // describe("update user", () => {
+  //   it("updates a user", async () => {
+  //     const book = new Book({ name: "what", numOfPages: 10 });
+  //     await book.save();
 
-      book.name = "what2";
-      const updatedBook = await book.save();
+  //     book.name = "what2";
+  //     const updatedBook = await book.save();
 
-      const expected = "what2";
-      const actual = updatedBook.name;
-      expect(actual).equal(expected);
-    });
-  });
+  //     const expected = "what2";
+  //     const actual = updatedBook.name;
+  //     expect(actual).equal(expected);
+  //   });
+  // });
 });
