@@ -4,7 +4,7 @@ const expect = chai.expect;
 const assert = chai.assert;
 
 var mongodb =
-  "mongodb://sssaini1:sssaini1@ds147902.mlab.com:47902/testing";
+  "mongodb://sssaini1:sssaini1@ds125716.mlab.com:25716/testing-later";
 mongoose.connect(mongodb);
 const Book = require("../book/book.model");
 
@@ -13,11 +13,8 @@ describe("Book Model", () => {
     await Book.remove({});
   });
 
-  afterEach(async () => {
-    await Book.remove({});
-  });
-
   after(async () => {
+    await Book.remove({});
     await mongoose.connection.close();
   });
 
