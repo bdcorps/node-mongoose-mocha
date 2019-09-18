@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bdcorps/node-mongoose-mocha.svg?branch=master)](https://travis-ci.org/bdcorps/node-mongoose-mocha)
+
 # node-mongoose-mocha-demo
 
 > Super simple CRUD web application for saving and retrieving books related data. Illustrates the best practices for unit, integration, and end-to-end testing for a database centric application.
