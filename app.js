@@ -9,7 +9,7 @@ var app = express();
 
 mongoose.Promise = global.Promise;
 
-var uri = "mongodb://localhost:27017/testing";
+var uri = "mongodb://localhost:27017/bookstore";
 mongoose.connect(uri, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
